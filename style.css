@@ -1,0 +1,1257 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+
+.header{
+    background-color: #0c0f38;
+    width: 100vw;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+ 
+    justify-content: space-between;
+    min-height: 7vh;
+    padding: 40px;
+
+}
+
+.header .left img{
+    margin-left: 2vw;
+}
+
+.header .right .nav{
+    width: 50vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+
+
+.header .right .nav .txt,.header .right .nav .ico{
+    font-size: 17px;
+    display: flex;
+    color: white;
+    transition: .5s;
+  
+    
+
+}
+
+.header .right .nav .ico{
+    font-size: 22px;
+    display: none;
+}
+
+.header .right .nav .hover{
+    color: #fdd430;
+}
+
+
+
+
+
+.header .right .nav .txt:hover{
+    cursor: pointer;
+    color: #fdd430;
+}
+
+
+.menu{
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+    padding-bottom: 3vh;
+    display: none;
+
+
+   
+}
+
+.go{
+    animation: go .5s ease-in-out;
+}
+@keyframes go {
+    from{
+        height: 0px;
+    }
+    to{
+        height: 40vh;
+    }
+}
+
+.back{
+    animation: back 1s ease-in-out;
+}
+@keyframes back {
+    from{
+        height: 40vh;
+    }
+    to{
+        height: 0px;
+    }
+}
+.menu .nav .txt{
+    margin-top: 20px;
+    margin-left: 10px;
+    transition: .5s;
+
+}
+
+.menu .nav .hover{
+    color: #fdd430;
+}
+.menu .nav .txt:hover{
+    cursor: pointer;
+    color: #fdd430;
+    
+}
+
+.landing{
+    padding-bottom: 2vh;
+    width: 100vw;
+    height: 90vh;
+    background-color: #0c0f38;
+}
+
+.landing .grid{
+ 
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.landing .grid .left{
+    margin-top: 5vh;
+}
+
+.landing .grid .left .con{
+    width: 40vw;
+    margin-left: 5vw;
+}
+
+.landing .grid .left h1{
+    color: white;
+    font-size: 60px;
+    
+}
+
+
+.landing .grid .left h3{
+    margin-top: 20px;
+    color: #fdd430;
+    font-size: 40px;
+   
+}
+
+.landing .grid .left p{
+    color: white;
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: 20px;
+    width: 30vw;
+}
+
+.landing .grid .left button{
+    margin-top: 20px;
+    transition: .5s;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 17px;
+
+}
+
+
+
+.landing .grid .left button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+.web-hosting{
+    text-align: center;
+    margin-top: 7vh;
+    padding-bottom: 2vh;
+}
+
+.web-hosting h1{
+    color: #0c0f38;
+    font-size: 40px;
+}
+
+.web-hosting p{
+    width: 60vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #0c0f38;
+    font-size: 17px;
+    line-height: 28px;
+    padding: 40px 50px;
+}
+
+.web-hosting button{
+    margin-top: 20px;
+    transition: .5s;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: black;
+    color: white;
+
+}
+
+
+.web-hosting button:hover{
+    background-color: #0c0f38;
+    color: white;
+    cursor: pointer;
+}
+
+
+.best {
+    margin-bottom: 2vh;
+    padding-bottom: 5vh;
+    margin-top: 5vh;
+    text-align: center;
+    background-color: #0c0f38;
+    color: white;
+}
+
+.best h1{
+    font-size: 40px;
+    margin-top: 5vh;
+}
+.best .grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+    grid-gap: 0px;
+}
+.best .grid .detail{
+    border: 2px white solid;
+    width: 23vw;
+    min-height: 40vh;
+    margin-top: 5vh;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.best .grid .detail img{
+   background-color: white;
+   padding: 5%;
+   border-radius: 50%;
+   margin-top: 20px;
+}
+.best .grid .detail h3{
+   
+    margin-top: 10px;
+}
+
+.best .grid .detail p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15vw;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 10px;
+}
+
+
+.best button{
+    margin-top: 5vh;
+   
+    transition: .5s;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+   
+}
+.best button:hover{
+    background-color: #8308eb;
+    cursor: pointer;
+    color: white;
+   
+}
+.best .grid .detail:hover{
+    background-color: #8308eb;
+    cursor: pointer;
+}
+
+
+.why{
+  
+    margin-bottom: 2vh;
+    padding-bottom: 5vh;
+    margin-top: 5vh;
+    text-align: center;
+
+ 
+}
+
+.why h1{
+    font-size: 40px;
+    color: #0c0f38;
+
+}
+
+.why .txt{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    margin-top: 5px;
+}
+
+.why .flex{
+    margin-top: 5vh;
+    display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-items: center;
+}
+
+
+.why .flex .con{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .5s;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    min-height: 50vh;
+    width: 25vw;
+    border-radius: 15px;
+}
+
+.why .flex .con img{
+    margin-top: 20px;
+}
+
+.why .flex .con h3{
+    margin-top: 20px;
+}
+.why .flex .con p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    margin-top: 20px;
+}
+
+.why .flex button{
+    margin-top: 20px;
+    transition: .5s;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: black;
+    color: white;
+
+}
+
+
+.why .flex button:hover{
+    background-color: #8308eb;
+    color: white;
+    cursor: pointer;
+}
+
+
+.contact{
+    background-color: #0c0f38;
+    margin-top: 5vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+.contact h1{
+    font-size: 40px;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    
+    width: 50vw;
+    
+}
+.contact form input,textarea{
+    resize: none;
+    border: none;
+    outline: none;
+    color: #999999;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 2%;
+    font-size: 16px;
+}
+
+.contact form button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 2%;
+    color: #e83e8c;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.copy{
+    text-align: center;
+    background-color: white;
+    color: #0c0f38;
+    padding: 1%;
+    font-weight: 500;
+   
+}
+
+/*                        Mobile S                             */
+@media screen and (max-width: 320px) and (min-width: 0px){
+    .landing{
+        height: 100vh;
+    }
+    .header .right .nav .txt{
+        display: none;
+
+    }
+
+    .header .right .nav .ico{
+        display: block;
+        margin-right: 10px;
+    }
+    .header{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .header .left img{
+        margin-left: 5px;
+    }
+
+
+    .header .right .nav{
+        
+        width: unset;
+      
+    }
+
+    .landing .grid{
+        grid-template-columns: 100%;
+    }
+
+    .landing .grid .left .con{
+        width: 100vw;
+    }
+    .landing .grid .left p{
+        width: 90vw;
+        font-size: 15px;
+    }
+    .landing .grid .left h1{
+       font-size: 35px;
+    }
+    .landing .grid .left h3{
+       font-size: 25px;
+    }
+   
+    .landing .grid .right img{
+        width: 290px;
+        height: 260px;
+        margin-top: 20px;
+    }
+    .web-hosting h1{
+        font-size: 30px;
+    }
+    .web-hosting img{
+        width: 290px;
+        height: 244px;
+        margin-top: 30px;
+    }
+
+    .web-hosting p{
+        width: 100vw;
+    }
+
+    .web-hosting button{
+        padding: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+    .best .grid{
+        grid-template-columns: 100%;
+    }
+    .best .grid .detail{
+        width: 90vw;
+    }
+    .best .grid .detail p{
+        width: 90vw;
+    }
+
+    .best button{
+        padding: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .why .flex{
+        grid-template-columns: 100%;
+    }
+
+    .why .flex .details .con{
+        width: 90vw;
+        padding-bottom: 10px;
+    }
+    .why .flex .details .con p{
+        width: 80vw;
+    }
+    .why .flex .details button{
+        margin-bottom: 5vh;
+    }
+
+
+    .contact form{
+        width: 90vw;
+    }
+    .contact form input,  .contact form textarea{
+        padding: 5%;
+    }
+    .contact form button{
+        padding: 5%;
+        width: 50vw;
+        border-radius: 20px;
+    }
+
+
+
+}
+
+
+
+/*                        Mobile M                              */
+@media screen and (max-width: 375px) and (min-width: 321px){
+    .landing{
+        height: 100vh;
+    }
+    .header .right .nav .txt{
+        display: none;
+
+    }
+
+    .header .right .nav .ico{
+        display: block;
+        margin-right: 10px;
+    }
+    .header{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .header .left img{
+        margin-left: 5px;
+    }
+
+
+    .header .right .nav{
+        
+        width: unset;
+      
+    }
+
+    .landing .grid{
+        grid-template-columns: 100%;
+    }
+
+    .landing .grid .left .con{
+        width: 100vw;
+    }
+    .landing .grid .left p{
+        width: 90vw;
+        font-size: 15px;
+    }
+    .landing .grid .left h1{
+       font-size: 35px;
+    }
+    .landing .grid .left h3{
+       font-size: 25px;
+    }
+   
+    .landing .grid .right img{
+        width: 320px;
+        height: 260px;
+        margin-top: 20px;
+    }
+    .web-hosting h1{
+        font-size: 30px;
+    }
+    .web-hosting img{
+        width: 320px;
+        height: 260px;
+        margin-top: 30px;
+    }
+
+    .web-hosting p{
+        width: 100vw;
+    }
+
+    .web-hosting button{
+        padding: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+    .best .grid{
+        grid-template-columns: 100%;
+    }
+    .best .grid .detail{
+        width: 90vw;
+    }
+    .best .grid .detail p{
+        width: 90vw;
+    }
+
+    .best button{
+        padding: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .why .flex{
+        grid-template-columns: 100%;
+    }
+
+    .why .flex .details .con{
+        width: 90vw;
+        padding-bottom: 10px;
+    }
+    .why .flex .details .con p{
+        width: 80vw;
+    }
+    .why .flex .details button{
+        margin-bottom: 5vh;
+    }
+
+
+    .contact form{
+        width: 90vw;
+    }
+    .contact form input,  .contact form textarea{
+        padding: 5%;
+    }
+    .contact form button{
+        padding: 5%;
+        width: 50vw;
+        border-radius: 20px;
+    
+
+
+}
+
+
+
+}
+
+/*                        Mobile L                              */
+@media screen and (max-width: 425px) and (min-width: 376px){
+    .landing{
+        height: 100vh;
+    }
+    .header .right .nav .txt{
+        display: none;
+
+    }
+
+    .header .right .nav .ico{
+        display: block;
+        margin-right: 10px;
+    }
+    .header{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .header .left img{
+        margin-left: 5px;
+    }
+
+
+    .header .right .nav{
+        
+        width: unset;
+      
+    }
+
+    .landing .grid{
+        grid-template-columns: 100%;
+    }
+
+    .landing .grid .left .con{
+        width: 100vw;
+    }
+    .landing .grid .left p{
+        width: 90vw;
+        font-size: 15px;
+    }
+    .landing .grid .left h1{
+       font-size: 35px;
+    }
+    .landing .grid .left h3{
+       font-size: 25px;
+    }
+   
+    .landing .grid .right img{
+        width: 390px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .web-hosting h1{
+        font-size: 30px;
+    }
+    .web-hosting img{
+        width: 390px;
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    .web-hosting p{
+        width: 100vw;
+    }
+
+    .web-hosting button{
+        padding: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+    .best .grid{
+        grid-template-columns: 100%;
+    }
+    .best .grid .detail{
+        width: 90vw;
+    }
+    .best .grid .detail p{
+        width: 90vw;
+    }
+
+    .best button{
+        padding: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .why .flex{
+        grid-template-columns: 100%;
+    }
+
+    .why .flex .details .con{
+        width: 90vw;
+        padding-bottom: 10px;
+    }
+    .why .flex .details .con p{
+        width: 80vw;
+    }
+    .why .flex .details button{
+        margin-bottom: 5vh;
+    }
+
+
+    .contact form{
+        width: 90vw;
+    }
+    .contact form input,  .contact form textarea{
+        padding: 5%;
+    }
+    .contact form button{
+        padding: 5%;
+        width: 50vw;
+        border-radius: 20px;
+    
+
+
+}
+
+    
+
+}
+
+
+
+
+/*                        TAblet                             */
+@media screen and (max-width: 800px) and (min-width: 426px){
+    .landing{
+        height: 70vh;
+    }
+    .landing .grid .left p{
+        width: 90vw;
+        font-size: 15px;
+    }
+    .landing .grid .left h1{
+       font-size: 40px;
+    }
+    .landing .grid .left h3{
+       font-size: 30px;
+    }
+   
+    .landing .grid .left .con{
+        width: 40vw;
+    }
+    .landing .grid .right img{
+        width: 390px;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+
+    .best .grid .detail,.best .grid .detail p{
+       width: 30vw;
+    }
+   
+    .why .flex .details .con{
+        width: 30vw;
+        padding-bottom: 2vh;
+    }
+    .why .flex .details .con p{
+        width: 30vw;
+    }
+
+
+    .contact form{
+        width: 80vw;
+    }
+    .contact form button{
+        width: 30vw;
+        border-radius: 25px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 500px){
+    .header .right .nav .txt{
+        display: none;
+
+    }
+
+    .header .right .nav .ico{
+        display: block;
+        margin-right: 10px;
+    }
+    .header{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .header .left img{
+        margin-left: 5px;
+    }
+
+
+    .header .right .nav{
+        
+        width: 20vw;
+      
+    }
+    .landing{
+        height: 100vh;
+    }
+
+    .landing .grid{
+        grid-template-columns: 100%;
+    }
+
+    .landing .grid .left .con{
+        width: 100vw;
+    }
+    .landing .grid .left p{
+        width: 90vw;
+        font-size: 15px;
+    }
+    .landing .grid .left h1{
+       font-size: 35px;
+    }
+    .landing .grid .left h3{
+       font-size: 25px;
+    }
+   
+    .landing .grid .right img{
+        width: 390px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .web-hosting h1{
+        font-size: 30px;
+    }
+    .web-hosting img{
+        width: 390px;
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    .web-hosting p{
+        width: 100vw;
+    }
+
+    .web-hosting button{
+        padding: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+    .best .grid{
+        grid-template-columns: 100%;
+    }
+    .best .grid .detail{
+        width: 90vw;
+    }
+    .best .grid .detail p{
+        width: 90vw;
+        font-size: 17px;
+    }
+    .best .grid .detail h3{
+        width: 90vw;
+        font-size: 22px;
+    }
+
+    .best button{
+        padding: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .why .flex{
+        grid-template-columns: 100%;
+    }
+
+    .why .flex .details .con{
+        width: 90vw;
+        padding-bottom: 10px;
+    }
+    .why .flex .details .con p{
+        width: 80vw;
+    }
+    .why .flex .details button{
+        margin-bottom: 5vh;
+    }
+
+
+    .contact form{
+        width: 90vw;
+    }
+    .contact form input,  .contact form textarea{
+        padding: 5%;
+    }
+    .contact form button{
+        padding: 5%;
+        width: 50vw;
+        border-radius: 20px;
+    
+
+
+}
+
+    
+}
+
+@media screen and (max-width: 700px) and (min-width: 601px){
+    .header .right .nav .txt{
+        display: none;
+
+    }
+
+    .header .right .nav .ico{
+        display: block;
+        margin-right: 10px;
+    }
+    .header{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .header .left img{
+        margin-left: 5px;
+    }
+
+
+    .header .right .nav{
+        
+        width: 20vw;
+      
+    }
+    .landing{
+        height: 100vh;
+    }
+
+    .landing .grid{
+        grid-template-columns: 100%;
+    }
+
+    .landing .grid .left .con{
+        width: 100vw;
+    }
+    .landing .grid .left p{
+        width: 90vw;
+        font-size: 15px;
+    }
+    .landing .grid .left h1{
+       font-size: 35px;
+    }
+    .landing .grid .left h3{
+       font-size: 25px;
+    }
+   
+    .landing .grid .right img{
+        width: 420px;
+        height: 330px;
+        margin-top: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .web-hosting h1{
+        font-size: 30px;
+    }
+    .web-hosting img{
+        width: 390px;
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    .web-hosting p{
+        width: 100vw;
+    }
+
+    .web-hosting button{
+        padding: 2%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+    .best .grid{
+        grid-template-columns: 50% 50%;
+    }
+    .best .grid .detail{
+        width: 45vw;
+    }
+    .best .grid .detail p{
+        width: 43vw;
+        font-size: 17px;
+    }
+    .best .grid .detail h3{
+       
+        font-size: 22px;
+    }
+
+    .best button{
+        padding: 2%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .why .flex{
+        grid-template-columns: 100%;
+    }
+
+    .why .flex .details .con{
+        width: 90vw;
+        padding-bottom: 10px;
+    }
+    .why .flex .details .con p{
+        width: 80vw;
+    }
+    .why .flex .details button{
+        margin-bottom: 5vh;
+    }
+
+
+    .contact form{
+        width: 80vw;
+    }
+    .contact form input,  .contact form textarea{
+        padding: 3%;
+    }
+    .contact form button{
+        padding: 3%;
+        width: 30vw;
+        border-radius: 20px;
+    
+
+
+}
+}
+
+
+
+@media screen and (max-width: 950px) and (min-width: 801px){
+    .landing{
+        height: 70vh;
+    }
+    .landing .grid .left p{
+        width: 90vw;
+        font-size: 15px;
+    }
+    .landing .grid .left h1{
+       font-size: 40px;
+    }
+    .landing .grid .left h3{
+       font-size: 30px;
+    }
+   
+    .landing .grid .left .con{
+        width: 40vw;
+    }
+    .landing .grid .right img{
+        width: 390px;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+
+    .best .grid .detail,.best .grid .detail p{
+       width: 30vw;
+    }
+   
+    .why .flex .details .con{
+        width: 30vw;
+        padding-bottom: 2vh;
+    }
+    .why .flex .details .con p{
+        width: 28vw;
+    }
+
+
+    .contact form{
+        width: 80vw;
+    }
+    .contact form button{
+        width: 30vw;
+        border-radius: 25px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 951px){
+    .landing{
+        height: 70vh;
+    }
+    .landing .grid .left p{
+        width: 90vw;
+        font-size: 15px;
+    }
+    .landing .grid .left h1{
+       font-size: 40px;
+    }
+    .landing .grid .left h3{
+       font-size: 30px;
+    }
+   
+    .landing .grid .left .con{
+        width: 40vw;
+    }
+    .landing .grid .right img{
+        width: 420px;
+        height: 320px;
+        margin-top: 20px;
+    }
+
+
+    .best .grid .detail,.best .grid .detail p{
+       width: 30vw;
+    }
+   
+    .why .flex .details .con{
+        width: 30vw;
+        padding-bottom: 2vh;
+    }
+    .why .flex .details .con p{
+        width: 28vw;
+    }
+
+
+    .contact form{
+        width: 80vw;
+    }
+    .contact form button{
+        width: 30vw;
+        border-radius: 25px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){
+
+
+
+}
+
+
+
+@media screen and (max-width: 1600px) and (min-width: 1441px){
+
+    
+
+}
+
+
+
+@media screen and (max-width: 1700px) and (min-width: 1601px){
+    
+
+}
+
+
+
+@media screen and (max-width: 1900px) and (min-width: 1701px){
+    
+
+
+
+
+}
+@media screen and (max-width: 2000px) and (min-width: 1901px){
+    
+   
+
+
+}
+
+
+
+
